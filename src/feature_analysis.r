@@ -31,12 +31,15 @@ library(ggplot2)
 
 
 
-
 # Multi-Class SVM for predicting disease classes based on a disease's features in bio_pathways_features
+## Use all of the features + another model that uses the features based on the 'best projection'
+
+
 
 
 # Multi-Class SVM for predicting disease classes based on a disease's proteins and their orbit signatures (diseasemotifs)
+## Use all of the features + another model that uses the features based on the 'best projection'
 
 
-# In addition we could do Gaussian Mixture Models on any of those dimensionality reduction techniques.
+# In addition we could do Gaussian Mixture Models on any of those dimensionality reduction techniques. If we have time.
 

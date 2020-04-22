@@ -87,7 +87,6 @@ bio_pathways_features <- data.frame(read.csv('./data/bio-pathways-features.csv',
 
 
 
-
 # Bio-Pathways-Protein-Motifs
 
 bio_pathways_proteinmotifs <- data.frame(read.csv('./data/bio-pathways-proteinmotifs.csv', header = TRUE))

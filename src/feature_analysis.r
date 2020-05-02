@@ -5,9 +5,14 @@
 library(tidyverse)
 library(hash)
 library(ggplot2)
+library(e1071)
+library(dplyr)
 
+e <- bio_pathways_features[match(bio_pathways_features$Disease.ID, bio_pathways_diseaseclasses$Disease.ID), ]
 
+network_features <- subset(bio_pathways_features, Disease.ID %in% bio_pathways_diseaseclasses$Disease.ID)
 
+e <- drop_na(e)
 
 # Dimensionality Reduction on the bio-pathways-features.csv (bio_pathways_features .RData)
 # Label each point with a color for it's disease Class (30 total classes)
